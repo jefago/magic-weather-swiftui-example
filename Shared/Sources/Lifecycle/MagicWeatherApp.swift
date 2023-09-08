@@ -27,7 +27,6 @@ struct MagicWeatherApp: App {
 
         Purchases.configure(
             with: Configuration.Builder(withAPIKey: Constants.apiKey)
-                .with(usesStoreKit2IfAvailable: true)
                 .build()
         )
 
